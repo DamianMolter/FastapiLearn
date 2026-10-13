@@ -79,15 +79,3 @@ async def delete_todo(db: db_dependency, todo_id: int = Path(gt=0)):
     db.query(Todos).filter(Todos.id == todo_id)
 
     db.commit()
-
-
-
-
-
-
-
-
-
-
-
-
